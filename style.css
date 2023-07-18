@@ -1,0 +1,70 @@
+/* ******************************Section 01 CSS starts here****************************************************************/
+.resource_page{
+    padding-top: 112px ;
+    background-color: #fff;
+}
+.resource_page .resource_content{
+    display: flex;
+}
+.resource_page .resource_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resource_page .resource_content .resource_left_content{
+    max-width: 585px;
+}
+.resource_page .resource_content  .resource_right_content{
+    max-width: 530px;
+}
+
+/************* Section 01 Media Query starts  */
+@media (max-width: 767px) {
+    .wrapper {
+      flex-direction: column;
+    }
+    .resource_page{
+        padding-top: 80px;
+    }
+    .resource_page .resource_content{
+        display: block;
+    }
+    .resource_page .resource_content  .resource_right_content{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .resource_page .resource_content .resource_left_content{
+        max-width: 100%;
+    }
+}
+/* ***************Section 01 Media Query ends */
+/* **************************Section 01 CSS ends here ***********************************************************************/
+
+
+/*****************Section 02 CSS starts *********************************************************************************** */
+.cards_section{
+    padding: 168px 0 143px;
+    background-color: #F5F9FC;
+}
+.cards_section .cards_section_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: auto;
+    gap: 26px;
+}
+
+.cards_section .cards_section_content .box{
+    max-width: 209px;
+    padding: 15px;
+    background-color: #fff;
+    width:16%;
+    height: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
