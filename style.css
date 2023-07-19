@@ -1,75 +1,283 @@
 /* ******************************Section 01 CSS starts here****************************************************************/
-.resource_page{
-    padding-top: 112px ;
-    background-color: #fff;
+.resource_page {
+  padding-top: 112px;
+  background-color: #fff;
 }
 .resource_page .resource_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.resource_page .resource_content .resource_left_content{
-    /* max-width: 585px; */
-    display: flex;
-    flex-direction: column;
-    max-width: 46%;
-    justify-content: center;
+.resource_page .resource_content .resource_left_content {
+  /* max-width: 585px; */
+  display: flex;
+  flex-direction: column;
+  max-width: 46%;
+  justify-content: center;
 }
-.resource_page .resource_content  .resource_right_content{
-    max-width: 46%;
+.resource_page .resource_content .resource_right_content {
+  max-width: 46%;
 }
 
 /************* Section 01 Media Query starts  */
 @media (max-width: 767px) {
-    .wrapper {
+  /* .wrapper {
       flex-direction: column;
-    }
-    .resource_page{
-        padding-top: 80px;
-    }
-    .resource_page .resource_content{
-        display: block;
-    }
-    .resource_page .resource_content  .resource_right_content{
+    } */
+  .resource_page {
+    padding-top: 60px;
+  }
+  .resource_page .resource_content {
+    /* display: block; */
+    flex-direction: column;
     text-align: center;
+  }
+  .resource_page .resource_content .resource_right_content {
+    max-width: 100%;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    }
-    .resource_page .resource_content .resource_left_content{
-        max-width: 100%;
-    }
+  }
+  .resource_page .resource_content .resource_left_content {
+    max-width: 100%;
+  }
 }
 /* ***************Section 01 Media Query ends */
 /* **************************Section 01 CSS ends here ***********************************************************************/
 
-
 /*****************Section 02 CSS starts *********************************************************************************** */
-.cards_section{
-    padding: 168px 0 143px;
-    background-color: #F5F9FC;
+.cards_section {
+  padding: 168px 0 143px;
+  background-color: #f5f9fc;
 }
-.cards_section .cards_section_content .all_cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 26px;
-    justify-content: center;
+.cards_section .cards_section_content .all_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
 }
 
-.cards_section .cards_section_content .box{
-    background-color: #fff;
-    min-height: 147px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    flex-basis: 15%;
-    border: 1px solid rgba(11, 54, 148, 0.15);
+.cards_section .cards_section_content .box {
+  background-color: #fff;
+  min-height: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  flex-basis: 15%;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 0 10px;
+}
+.cards_section .cards_section_content .box:hover {
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+/* **************Section 02 Media Query starts***********/
+@media (max-width: 1024px) {
+  .cards_section {
+    padding: 80px 0;
+  }
+  .cards_section .cards_section_content .box {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .cards_section .cards_section_content .box {
+    flex-basis: 100%;
+  }
+  .cards_section {
+    padding: 60px 0;
+  }
+}
+
+
+/* *************Section 02 Media Query ends*************** */
+/* *********************************************Section 02 CSS ends *********************************************** */
+
+/* ********************Section 03 CSS starts ************************************************************************/
+.tutorials_section {
+  padding: 97px 0 120px;
+}
+.tutorials_section .tutorials_section_content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.tutorials_section .tutorials_section_content .tut_top_content{
+    max-width: 852px;
+     
+}
+.tutorials_section
+  .tutorials_section_content
+  .tut_bottom_section
+  .all_tut_cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-basis: 20%; */
+  /* gap: 30px; */
+  gap:1.8%;
+  row-gap: 30px;
+  justify-content: space-between;
+}
+.tutorials_section
+  .tutorials_section_content
+  .tut_bottom_section
+  .all_tut_cards
+  .card {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;
+    text-align: center; */
+  /* flex-basis: 26.11%; */
+  flex-basis:calc(28.8% - 30px);
+  min-height: 230px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  flex-direction: column;
+  padding: 30px;
+}
+.tutorials_section
+  .tutorials_section_content
+  .tut_bottom_section
+  .all_tut_cards
+  .card:hover {
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
+}
+/******************Section-03 Media Query starts****************** */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .tutorials_section {
+    padding: 80px 0;
+  } */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .tutorials_section {
+      padding: 80px 0;
+    }
+  .tutorials_section
+    .tutorials_section_content
+    .tut_bottom_section
+    .all_tut_cards
+    .card {
+    flex-basis: 38%;
+  }
+}
+@media(max-width:767px){
+    .tutorials_section {
+        padding: 60px 0;
+      }
+      .tutorials_section
+  .tutorials_section_content
+  .tut_bottom_section
+  .all_tut_cards
+  .card {
+        flex-basis: 100%;
+        max-height: 100%;
+      }
+}
+/*************************Section-03 media query ends************/
+/**************************************************Section-03 CSS ends here********************************************** */
+
+
+
+/********************Section-04 CSS starts from here ******************************************************************** */
+.product_feature{
+    padding: 120px 0;
+    background: #F5F9FC; 
+}
+.product_feature .product_feature_content .feature_top {
+    max-width: 852px;
+  
+   
+}
+.product_feature .product_feature_content .feature_middle .para {
+    font-size: 12px;
+}
+.product_feature .product_feature_content .feature_middle_left{
+    max-width: 543px;
+ 
+}
+.product_feature .product_feature_content .feature_middle_right{
+  max-width: 543px;
+  
+}
+.product_feature .product_feature_content .feature_bottom_button{
     text-align: center;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    padding: 0 10px
+    padding-top: 51px;
+    
 }
-.cards_section .cards_section_content .box:hover{
- box-shadow:0px 2px 40px rgba(0, 0, 0, 0.15) ;
+.product_feature .product_feature_content .feature_bottom_button .button{
+    border-radius: 6px;
+
 }
+.product_feature .product_feature_content .feature_middle .feature_sub_top .duration{
+    display:flex;
+    gap:42px;
+}
+.product_feature .product_feature_content .feature_middle_left .feature_sub_top .duration img{
+    display:inline-block;
+}
+.product_feature .product_feature_content .feature_middle_left .feature_sub_top .duration p{
+    display:inline-block;
+}
+.product_feature .product_feature_content .feature_middle_left .duration{
+  display: flex;
+  gap:42px;
+}
+.product_feature .product_feature_content .feature_middle_right .duration{
+  display: flex;
+  gap:42px;
+}
+
+
+.product_feature .product_feature_content .feature_middle_right .feature_sub_top .duration img{
+  display:inline-block;
+}
+.product_feature .product_feature_content .feature_middle_right .feature_sub_top .duration p{
+  display:inline-block;
+}
+.product_feature .product_feature_content .feature_middle_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:59px;
+  padding-top: 70px;
+}
+/************************Section-04 media query starts************************** */
+@media(max-width:1194px){
+  .product_feature .product_feature_content .feature_middle_wrapper{
+   flex-direction: column;
+  }
+
+.product_feature{
+  padding: 80px 0;
+}
+  .product_feature .product_feature_content .feature_top {
+    max-width: 100%;
+    text-align: center;
+  }
+  .product_feature .product_feature_content .feature_middle_left{
+    width:100%;
+  }
+  .product_feature .product_feature_content .feature_middle_right{
+    width:100%;
+  }
+  .product_feature .product_feature_content .feature_middle_wrapper .feature_middle_left .feature_sub_top .medium{
+    line-height: 30px;
+  }
+
+
+/* @media(max-width:1024){
+    .product_feature .product_feature_content .feature_middle_wrapper{
+     flex-direction: column;
+    }
+  } */
+
+
+  /* .product_feature .product_feature_content .feature_middle_wrapper .feature_middle_left{
+    max-width: 100%;
+} */
+}
+
+
