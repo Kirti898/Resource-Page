@@ -3,19 +3,20 @@
     padding-top: 112px ;
     background-color: #fff;
 }
-.resource_page .resource_content{
-    display: flex;
-}
 .resource_page .resource_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .resource_page .resource_content .resource_left_content{
-    max-width: 585px;
+    /* max-width: 585px; */
+    display: flex;
+    flex-direction: column;
+    max-width: 46%;
+    justify-content: center;
 }
 .resource_page .resource_content  .resource_right_content{
-    max-width: 530px;
+    max-width: 46%;
 }
 
 /************* Section 01 Media Query starts  */
@@ -48,23 +49,27 @@
     padding: 168px 0 143px;
     background-color: #F5F9FC;
 }
-.cards_section .cards_section_content{
+.cards_section .cards_section_content .all_cards{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 100%;
-    margin: auto;
     gap: 26px;
+    justify-content: center;
 }
 
 .cards_section .cards_section_content .box{
-    max-width: 209px;
-    padding: 15px;
     background-color: #fff;
-    width:16%;
-    height: 147px;
+    min-height: 147px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3px;
+    flex-basis: 15%;
+    border: 1px solid rgba(11, 54, 148, 0.15);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    padding: 0 10px
+}
+.cards_section .cards_section_content .box:hover{
+ box-shadow:0px 2px 40px rgba(0, 0, 0, 0.15) ;
 }
