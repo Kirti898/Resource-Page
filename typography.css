@@ -264,12 +264,14 @@ button {
   border: none;
   position: relative;
   z-index: 2;
+  /* background: transparent; */
 }
 
 button:hover {
   background: #fff;
   color: #0B3694;
   transition: all 0.3s ease-in;
+  border: 1px solid  #0B3694; 
 }
 
 /* Table Styling */
