@@ -143,6 +143,15 @@
   .tutorials_section_content
   .tut_bottom_section
   .all_tut_cards
+  .card .cards_bottom:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+
+  }
+.tutorials_section
+  .tutorials_section_content
+  .tut_bottom_section
+  .all_tut_cards
   .card:hover {
   box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -202,6 +211,12 @@
   max-width: 543px;
   
 }
+.product_feature .product_feature_content .feature_middle_right .feature_bottom a:hover{
+ text-decoration: underline;
+}
+.product_feature .product_feature_content .feature_middle_left .feature_bottom a:hover{
+  text-decoration: underline;
+ }
 .product_feature .product_feature_content .feature_bottom_button{
     text-align: center;
     padding-top: 51px;
@@ -224,10 +239,12 @@
 .product_feature .product_feature_content .feature_middle_left .duration{
   display: flex;
   gap:42px;
+  padding-top: 8px;
 }
 .product_feature .product_feature_content .feature_middle_right .duration{
   display: flex;
   gap:42px;
+  padding-top: 8px;
 }
 
 
@@ -280,4 +297,205 @@
 } */
 }
 
+/***********************Section-05 CSS starts from here********************************* */
+/***********************Section-05 CSS ends here**************************************** */
 
+/************************Section-06 CSS starts from here********************************* */
+.training_section{
+  padding:120px 0;
+  background: #F5F9FC;
+}
+.training_section .training_section_content .training_bottom_section .training_rows{
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 70px;
+}
+.training_section .training_section_content .training_bottom_section .training_rows .training_card{
+  background-color: #FFF;
+  max-width: 362px;
+  padding: 21px;
+  flex-basis: 29%;
+  border-radius: 6px;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  line-height: 20px;
+  /* transition: all 0.4s ease-in-out; */
+}
+.training_section .training_section_content .training_bottom_section .training_rows .training_card .button{
+  border-radius:6px;
+  padding: 15px 34px;
+}
+/************Section-07 Media query start*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .training_section {
+    padding: 80px 0;
+  }
+  
+} 
+@media(max-width:767px){
+  .training_section {
+      padding: 60px 0;
+    }
+.training_section .training_section_content .training_bottom_section .training_rows .training_card    {
+    flex-basis: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    }
+    .training_section .training_section_content .training_bottom_section .training_rows {
+      flex-direction: column;
+}
+}
+/*************************Section-07 Media Query ends********** */
+/********************************************Section-07 CSS ends here******************************** */
+
+
+/***********************************************Section-08 CSS starts from here**************************** */
+.videos_section{
+  padding: 120px 0;
+}
+.videos_section .videos_section_content .videos_bottom_section {
+  padding-top: 70px;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos{
+  display: flex;
+  gap: 59px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video{
+  max-width:543px;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1{
+  
+  display: flex;
+  gap: 42px;
+  padding-top: 8px;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video .videos_mid_content .video_bottom a:hover{
+}
+
+
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1 .dur_image_left img{
+  display: inline-block;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1 .dur_image_left p{
+  display: inline-block;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1 .video_image_right img{
+  display: inline-block;
+}
+.videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1 .video_image_right p{
+  display: inline-block;
+}
+/*********************section-08 Media Query starts***************** */
+
+/*********************Section-08 Media Query ends******************* */
+/**************************************************Section-08 CSS ends ********************************************* */
+.wistia_click_to_play, #wistia_399.thumbnail{
+  width: 100% !important;
+  max-width:543px;
+}
+
+
+
+
+/*************************************Section-09 CSS starts*********************************** */
+.documentation_section{
+  background-color: #F5F9FC;
+  padding: 120px 0;
+}
+.documentation_section .documentation_content h2{
+  /* padding-top: 86px; */
+  margin-bottom: 0;
+}
+.documentation_section .documentation_content .documentation_1{
+  padding-top: 86px;
+}
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content{
+  display: flex;
+  column-gap: 2%;
+  row-gap: 31px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  
+  justify-content: flex-start;
+}
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card{
+  background-color: #fff;
+  max-width: 361px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 3px;
+  flex-basis: 29%;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  /* text-align: center; */
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 19px 10px;
+}
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card:hover{
+
+box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card .container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+ 
+}
+.documentation_section .documentation_content .documentation_1  .doc_top_content{
+  max-width: 852px;
+  padding-bottom: 41px;
+  
+}
+.documentation_section .documentation_content .documentation_1  .doc_top_content p{
+  margin-bottom: 0;
+}
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card .container .large{
+  margin-bottom: 0;
+}
+/***********************Section-09 Media Query******************* */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .documentation_section {
+    padding: 80px 0;
+  }
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card {
+  flex-basis: 46%;
+  max-width: none;
+}
+.documentation_section .documentation_content .documentation_1 .doc_top_content p{
+  justify-content: center;
+}
+.documentation_section .documentation_content .documentation_1{
+  padding-top: 65px;
+}
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content{
+  justify-content: space-between;
+}
+}
+@media(max-width:767px){
+  .documentation_section {
+      padding: 60px 0;
+    }
+    .documentation_section .documentation_content .documentation_1{
+      padding-top: 55px;
+    }
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+.documentation_section .documentation_content .documentation_1 .doc_top_content p{
+      justify-content: center;
+    }
+.documentation_section .documentation_content .documentation_1 .doc_bottom_content{
+  row-gap: 20px;
+}
+    
+
+}
