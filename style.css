@@ -329,7 +329,7 @@
   border-radius:6px;
   padding: 15px 34px;
 }
-/************Section-07 Media query start*/
+/************Section-06 Media query start*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .training_section {
     padding: 80px 0;
@@ -349,11 +349,11 @@
       flex-direction: column;
 }
 }
-/*************************Section-07 Media Query ends********** */
-/********************************************Section-07 CSS ends here******************************** */
+/*************************Section-06 Media Query ends********** */
+/********************************************Section-06 CSS ends here******************************** */
 
 
-/***********************************************Section-08 CSS starts from here**************************** */
+/***********************************************Section-07 CSS starts from here**************************** */
 .videos_section{
   padding: 120px 0;
 }
@@ -393,10 +393,10 @@
 .videos_section .videos_section_content .videos_bottom_section .all_videos .video_duration_1 .video_image_right p{
   display: inline-block;
 }
-/*********************section-08 Media Query starts***************** */
+/*********************section-07 Media Query starts***************** */
 
-/*********************Section-08 Media Query ends******************* */
-/**************************************************Section-08 CSS ends ********************************************* */
+/*********************Section-07 Media Query ends******************* */
+/**************************************************Section-07 CSS ends ********************************************* */
 .wistia_click_to_play, #wistia_399.thumbnail{
   width: 100% !important;
   max-width:543px;
@@ -405,7 +405,7 @@
 
 
 
-/*************************************Section-09 CSS starts*********************************** */
+/*************************************Section-08 CSS starts*********************************** */
 .documentation_section{
   background-color: #F5F9FC;
   padding: 120px 0;
@@ -465,7 +465,7 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
 .documentation_section .documentation_content .documentation_1 .doc_bottom_content .doc_card .container .large{
   margin-bottom: 0;
 }
-/***********************Section-09 Media Query******************* */
+/***********************Section-08 Media Query******************* */
 @media (min-width: 768px) and (max-width: 1024px) {
   .documentation_section {
     padding: 80px 0;
@@ -501,6 +501,10 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
 .documentation_section .documentation_content .documentation_1 .doc_bottom_content{
   row-gap: 20px;
 }
-    
-
 }
+/*************************Section-08 media query ends*********************** */
+/********************************************Section-08 CSS ends************************************************ */
+
+
+
+/**********************************Section-09 CSS starts ********************************************************/
