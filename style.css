@@ -1,47 +1,78 @@
 /* ******************************Section 01 CSS starts here****************************************************************/
-.resource_page {
-  padding-top: 112px;
-  background-color: #fff;
+
+
+
+.resource_page{
+  padding: 225px 0 162px;
+  position: relative;
 }
-.resource_page .resource_content {
+.resource_page .resource_content{
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-.resource_page .resource_content .resource_left_content {
-  /* max-width: 585px; */
+.resource_content .resource_right_content{
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+}
+
+
+.resource_content .resource_left_content{
   display: flex;
+  max-width: 47%;
   flex-direction: column;
-  max-width: 46%;
   justify-content: center;
 }
-.resource_page .resource_content .resource_right_content {
+ 
+ 
+.resource_content .resource_right_content{
   max-width: 46%;
 }
 
+
+
+
+
+
+
 /************* Section 01 Media Query starts  */
-@media (max-width: 767px) {
-  /* .wrapper {
-      flex-direction: column;
-    } */
-  .resource_page {
-    padding-top: 60px;
-  }
-  .resource_page .resource_content {
-    /* display: block; */
+
+@media (max-width: 767px){
+.resource_page .resource_content{
+  
     flex-direction: column;
+    align-items: center;
     text-align: center;
-  }
-  .resource_page .resource_content .resource_right_content {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .resource_page .resource_content .resource_left_content {
-    max-width: 100%;
-  }
 }
+.resource_content .resource_left_content {
+    max-width: 100%;
+}
+.resource_content .resource_right_content{
+  max-width: 100%;
+
+}
+.resource_page{
+  padding: 60px 0;
+}
+
+}
+
+@media (max-width: 1023px){
+  .resource_page .resource_content{
+    
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .resource_page{
+    padding: 60px 0;
+  }
+  @media (max-width: 1231px){
+
+  }
+  
+}
+
 /* ***************Section 01 Media Query ends */
 /* **************************Section 01 CSS ends here ***********************************************************************/
 
@@ -301,6 +332,187 @@
 }
 
 /***********************Section-05 CSS starts from here********************************* */
+.roadmap_section{
+  padding: 120px 0;
+  background-color: #FFF;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_left{
+  background-image: url('./Images/image\ 5.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  min-height: 367px;
+
+  /* min-height: 385px; */
+  /* max-width: 385px;
+  width:100% */
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right{
+  width: 42%;
+  background-color: #F5F9FC;
+  padding: 38px;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top{
+  display: flex;
+  flex-wrap: wrap;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right .video_duration_1{
+  display:flex;
+  gap:11%;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right .video_duration_1 .dur_image_left img {
+  display: inline-block;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right .video_duration_1 .dur_image_left p{
+  display: inline-block;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right .video_duration_1 .video_image_right img p{
+  display: inline-block;
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right .video_duration_1 .video_image_right p{
+  display: inline-block;
+}
+
+
+
+.roadmap_section .roadmap_content .roadmap_subtop_2{
+  padding-top: 159px;
+}
+.roadmap_section .roadmap_content .roadmap_subtop_2 .map_top{
+  max-width: 852px;
+    width: 100%;
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows{
+  display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_1_image{
+  background-image: url('./Images/image\ 5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  min-height: 273px;
+  margin-bottom: 20px;
+}
+
+
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_2_image{
+  background-image: url('./Images/image\ 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  min-height: 272px;
+  margin-bottom: 20px;
+}
+
+
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_3_image{
+  background-image: url('./Images/third.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  min-height: 272px;
+  margin-bottom: 20px;
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card {
+ 
+    flex-basis: 31%;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #D3DCE5;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_1_content .large{
+  margin-bottom: 26px;
+}
+
+
+
+
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1{
+  display:flex;
+  gap:11%;
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1 .dur_image_left img{
+  display:inline-block
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1 .dur_image_left p{
+  display:inline-block
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1 .video_image_right img{
+  display:inline-block
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1 .video_image_right p{
+  display:inline-block
+}
+/**********************Section-05 Media Query*********** */
+@media(max-width:1024px)
+{
+  /* .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card {
+    flex-basis: 50%;
+    flex-direction: column;
+  } */
+  .roadmap_section{
+    padding:80px 0;
+  }
+  .roadmap_section .roadmap_content .roadmap_subbottom_2 .roadmap_rows .roadmap_card {
+    flex-basis: 47%;}
+ 
+
+}
+.roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right{
+  padding: 28px; 
+}
+
+.roadmap_section .roadmap_content .roadmap_subtop_2{
+  padding-top:80;
+}
+
+@media(max-width:767px)
+{
+  .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card {
+    flex-basis: 100%;
+
+  }
+  .roadmap_section{
+    padding:60px 0;
+  }
+  .roadmap_section .roadmap_content .roadmap_sub_top .roadmap_left{
+    width: 100%;
+
+  }
+  .roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right{
+    width: 100%;
+   
+  }
+  .roadmap_section .roadmap_content .roadmap_sub_top .roadmap_right{
+    padding: 20px; 
+  }
+  .roadmap_section .roadmap_content .roadmap_subtop_2{
+    padding-top:60;
+  }
+
+  /* .roadmap_section .roadmap_content  .roadmap_subbottom_2{
+    display:flex;
+    flex-direction: column;
+  } */
+}
+
+
+
+
 /***********************Section-05 CSS ends here**************************************** */
 
 /************************Section-06 CSS starts from here********************************* */
@@ -336,9 +548,10 @@
   }
   
 } 
+
 @media(max-width:767px){
   .training_section {
-      padding: 60px 0;
+      padding:  0;
     }
 .training_section .training_section_content .training_bottom_section .training_rows .training_card    {
     flex-basis: 100%;
@@ -508,3 +721,108 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
 
 
 /**********************************Section-09 CSS starts ********************************************************/
+.framework_section{
+  padding: 120px 0 130px;
+
+}
+.framework_section .framework_section_content .framework_top_section .large{
+  max-width: 852px;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows{
+  display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    
+}
+
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card{ 
+ 
+  max-width: 558px;
+  /* padding: 21px; */
+  flex-basis: 29%;
+  border-radius: 6px;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  
+}
+/* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_image_1{ 
+  max-width: 0px;
+} */
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left{
+  padding: 25px;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_right{
+  padding: 25px;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left .checks{
+  display:flex;
+  flex-wrap: wrap;
+  gap:30%;
+  row-gap: 18px;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left .check_1{
+  display:flex;
+  gap:10px;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left .check_1 .medium{
+  margin-bottom: 0;
+}
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_right .read {
+margin-top: 31px;
+}
+
+
+.framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left .read{
+  margin-top: 10px;
+
+}
+/************************Section-09 Media Query starts**************** */
+@media(max-width:1024px){
+  .framework_section{
+    padding: 80px 0 ;
+  
+  }
+  /* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card{ 
+ 
+   
+    flex-basis: 29%;
+    
+    
+  } */
+}
+
+@media (max-width: 767px) {
+  
+  .framework_section{
+    padding:60px;
+  
+  }
+  .framework_section .framework_section_content .framework_top_section .large{
+    max-width: 100%;
+  }
+}
+  /* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card{ 
+ 
+    
+    flex-basis: 50%;
+   
+    
+  }
+} */
+  /* .resource_page .resource_content {
+    
+    text-align: center;
+  }
+  .resource_page .resource_content .resource_right_content {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resource_page .resource_content .resource_left_content {
+    max-width: 100%;
+  }
+} */
+/* @media(max-width:1169px){
+
+} */
