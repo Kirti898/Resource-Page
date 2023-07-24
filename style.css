@@ -13,7 +13,7 @@
 .resource_content .resource_right_content{
   position: absolute;
   bottom: 0;
-  right: 8%;
+  right: 3%;
 }
 
 
@@ -38,40 +38,61 @@
 /************* Section 01 Media Query starts  */
 
 @media (max-width: 767px){
-.resource_page .resource_content{
-  
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.resource_content .resource_left_content {
-    max-width: 100%;
-}
-.resource_content .resource_right_content{
+resource_content .resource_right_content{
   max-width: 100%;
 
-}
+} 
 .resource_page{
   padding: 60px 0;
 }
+.resource_content .resource_right_content{
+  position: relative;
 
 }
+.resource_page .resource_content{
+  display: block;
+}
+.resource_page{
+ 
+  padding: 63px 0 60px;
+}
+.resource_content .resource_right_content{
 
-@media (max-width: 1023px){
-  .resource_page .resource_content{
-    
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
+  bottom: 0;
+  right: 0;
+  left:0
+}
+.resource_content .resource_left_content{
+  
+  max-width: 100%;
+
+}
+}
+
+/* @media (max-width: 1023px){
+
   .resource_page{
     padding: 60px 0;
+    padding: 63px 0 60px;
   }
-  @media (max-width: 1231px){
+  .resource_content .resource_right_content{
 
+    bottom: 0;
+    right: 0;
+    left:0
+  }
+  .resource_content .resource_right_content img{
+    width:100%
+  }
+  .resource_content .resource_right_content{
+   margin: 0 auto;
+  }
+  .resource_content .resource_left_content{
+    text-align: center;
+   max-width: 100%;
   }
   
-}
+} */
 
 /* ***************Section 01 Media Query ends */
 /* **************************Section 01 CSS ends here ***********************************************************************/
@@ -380,15 +401,15 @@
 .roadmap_section .roadmap_content .roadmap_subtop_2{
   padding-top: 159px;
 }
-.roadmap_section .roadmap_content .roadmap_subtop_2 .map_top{
+/* .roadmap_section .roadmap_content .roadmap_subtop_2 .map_top{
   max-width: 852px;
     width: 100%;
-}
+} */
 .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows{
   display: flex;
-    gap: 30px;
+    gap: 29px;
     flex-wrap: wrap;
-    padding-top: 70px;
+    margin-top: 70px;
     
 }
 .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_1_image{
@@ -434,6 +455,9 @@
     flex-direction: column;
     transition: all 0.4s ease-in-out;
 }
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_1_content{
+padding: 20px;
+}
 .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .roadmap_1_content .large{
   margin-bottom: 26px;
 }
@@ -456,6 +480,9 @@
 }
 .roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1 .video_image_right p{
   display:inline-block
+}
+.roadmap_section .roadmap_content  .roadmap_subbottom_2 .roadmap_rows .roadmap_card .video_duration_1{
+  padding-left: 20px;
 }
 /**********************Section-05 Media Query*********** */
 @media(max-width:1024px)
@@ -624,7 +651,7 @@
   padding: 120px 0;
 }
 .documentation_section .documentation_content h2{
-  /* padding-top: 86px; */
+ 
   margin-bottom: 0;
 }
 .documentation_section .documentation_content .documentation_1{
@@ -635,7 +662,7 @@
   column-gap: 2%;
   row-gap: 31px;
   flex-wrap: wrap;
-  /* justify-content: center; */
+ 
   
   justify-content: flex-start;
 }
@@ -745,9 +772,7 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(11, 54, 148, 0.15);
   
 }
-/* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_image_1{ 
-  max-width: 0px;
-} */
+
 .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left{
   padding: 25px;
 }
@@ -782,13 +807,7 @@ margin-top: 31px;
     padding: 80px 0 ;
   
   }
-  /* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card{ 
  
-   
-    flex-basis: 29%;
-    
-    
-  } */
 }
 
 @media (max-width: 767px) {
@@ -801,28 +820,71 @@ margin-top: 31px;
     max-width: 100%;
   }
 }
-  /* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card{ 
- 
-    
-    flex-basis: 50%;
-   
-    
-  }
-} */
-  /* .resource_page .resource_content {
-    
-    text-align: center;
-  }
-  .resource_page .resource_content .resource_right_content {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .resource_page .resource_content .resource_left_content {
-    max-width: 100%;
-  }
-} */
-/* @media(max-width:1169px){
 
-} */
+
+
+/* Section-10 CSS starts from here */
+.ecosystem_section{
+  background-color: #F5F9FC;
+  padding: 120px 0 119px;
+}
+.ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card .eco_left_content{
+  background-color: #fff;
+  max-width: 170px;
+  display: flex;
+  padding: 3px;
+  flex-basis: 29%;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 15px 10px;
+  justify-content: center;
+  border-radius: 6px;
+}
+.ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card {
+  display:flex;
+  gap:5%;
+  padding-top: 55px;
+}
+.ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card .vertical_line{
+  border: 1px solid var(--secondary-border-color, #DEE2EA);
+}
+/* .ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card { */
+/* media Query of Section-10 */
+@media(max-width:1024px){
+  .ecosystem_section{
+    padding: 80px 0;
+  }
+  
+}
+@media(max-width:767px){
+  .ecosystem_section{
+    padding: 60px 0;
+  }
+  .ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card .vertical_line{
+  display:none;
+  }
+  
+}
+/* Section-11 CSS*/
+.roadmap_section_padding{
+  padding: 120px 0 110px;
+}
+.roadmap_section .roadmap_content .roadmap_subtop_2_2{
+  padding-top:0 ;
+}
+@media(max-width:1024px){
+  .roadmap_section_padding{
+    padding-top:60px;
+  }
+
+  @media(max-width:767px){
+    .roadmap_section_padding{
+      padding-top:40px;
+    }
+  }
+}
