@@ -38,7 +38,7 @@
 /************* Section 01 Media Query starts  */
 
 @media (max-width: 767px){
-resource_content .resource_right_content{
+.resource_content .resource_right_content{
   max-width: 100%;
 
 } 
@@ -54,45 +54,53 @@ resource_content .resource_right_content{
 }
 .resource_page{
  
-  padding: 63px 0 60px;
+  padding: 60px 0;
 }
 .resource_content .resource_right_content{
 
   bottom: 0;
   right: 0;
-  left:0
+  left:0;
+  margin: 0 auto;
 }
 .resource_content .resource_left_content{
   
   max-width: 100%;
+  text-align: center;
 
 }
+.resource_content .resource_right_content img{
+  width: 100%;
 }
 
-/* @media (max-width: 1023px){
+}
 
-  .resource_page{
-    padding: 60px 0;
+ @media (max-width: 1023px){
+
+  /* .resource_page{
+     padding: 60px 0; 
     padding: 63px 0 60px;
-  }
-  .resource_content .resource_right_content{
+  } */
+  /* .resource_content .resource_right_content{
 
     bottom: 0;
     right: 0;
     left:0
-  }
+  }  */
   .resource_content .resource_right_content img{
     width:100%
+  } 
+  .resource_page{
+    padding: 60px 0 ;
   }
   .resource_content .resource_right_content{
-   margin: 0 auto;
-  }
-  .resource_content .resource_left_content{
-    text-align: center;
-   max-width: 100%;
+    position: relative;
+  
   }
   
-} */
+  
+  
+} 
 
 /* ***************Section 01 Media Query ends */
 /* **************************Section 01 CSS ends here ***********************************************************************/
@@ -830,7 +838,7 @@ margin-top: 31px;
 }
 .ecosystem_section .ecosystem_section_content .eco_bottom_section .ecosystem_rows .card .eco_left_content{
   background-color: #fff;
-  max-width: 170px;
+  /* max-width: 170px; */
   display: flex;
   padding: 3px;
   flex-basis: 29%;
