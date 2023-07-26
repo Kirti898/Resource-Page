@@ -72,6 +72,10 @@
 .resource_content .resource_right_content img{
   width: 100%;
 }
+.resource_content .resource_left_content .all_cards .all_cards .all_cards .large{
+  font-size: 18px;
+
+}
 
 }
 
@@ -764,7 +768,7 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
   max-width: 852px;
 }
 .framework_section .framework_section_content  .framework_bottom_section .framework_rows{
-  display: flex;
+   display: flex;
     gap: 30px;
     flex-wrap: wrap;
     padding-top: 70px;
@@ -780,6 +784,15 @@ box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(11, 54, 148, 0.15);
   
 }
+/* .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_image_1{
+  background-image: url('./Images/image\ 44.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+ 
+  margin-bottom: 20px;
+} */
 
 .framework_section .framework_section_content  .framework_bottom_section .framework_rows .framework_card .framework_bottom_content_left{
   padding: 25px;
@@ -896,3 +909,101 @@ margin-top: 31px;
     }
   }
 }
+/**********************Section-11 ends here********************* */
+
+
+/**************************Section-12 starts from here************/
+.blog_section{
+  padding:99px 0 121px;
+  background-color: #F5F9FC;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows{
+  display:flex;
+  gap: 32px;
+  justify-content: center;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows .card{
+  background-color: #FFF;
+  /* max-width: 530px; */
+  /* padding: 21px; */
+  padding:58px 41px 56px 40px;
+  flex-basis: 37%;
+  border-radius: 6px;
+  border: 1px solid rgba(11, 54, 148, 0.15);
+  line-height: 20px;
+}
+.blog_section .blog_section_content .blog_top{
+  margin-bottom: 62px;
+  text-align: center;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows .card .card_middle_content .card_para{
+  margin-bottom: 24px;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows .card .card_image{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows .card .card_middle_content{
+  text-align: center;
+}
+@media(max-width:767px){
+  .blog_section .blog_section_content .blog_bottom_section .blog_rows{
+    flex-direction: column;
+}
+.blog_section .blog_section_content .blog_bottom_section .blog_rows .card{
+  flex-basis: 100%;
+}
+.blog_section{
+  padding:60px 0 60px;
+}
+}
+
+/**********************Section-13 CSS starts from here***************** */
+.footer_section{
+  background: #fff;
+  padding: 110px  0 ;
+  position: relative;
+ 
+}
+.footer_section:before {
+  background-color: #0b3694;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  z-index: 0;
+  background-size: contain;
+  top: 0px;
+  content: "";
+  pointer-events: none;
+}
+.footer_section .footer_section_content{
+  display: flex;
+  gap: 51px;
+  border-radius: 6px;
+  padding: 55px;
+  background: #FFF;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.15)
+}
+.footer_section .footer_section_content .footer_right_content{
+  max-width: 64%;
+}
+@media(max-width:767px){
+  .footer_section{
+    padding:60px 0;
+  }
+  .footer_section .footer_section_content .footer_right_content{
+    max-width: 100%;
+  }
+  .footer_section .footer_section_content{
+    flex-direction: column;
+  }
+  .footer_section .footer_section_content .footer_right_content .footer_button{
+     text-align: center;
+     margin-top: 20px;
+
+}
+}
+
+
